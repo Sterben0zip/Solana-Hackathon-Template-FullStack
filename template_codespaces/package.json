@@ -30,7 +30,7 @@
     "@solana/client": "^1.2.0",
     "@solana/kit": "^5.1.0",
     "@solana/react-hooks": "^1.1.5",
-    "@solana/spl-token": "^0.4.14",
+    "@solana/spl-token": "^0.1.8",
     "@tailwindcss/vite": "^4",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",

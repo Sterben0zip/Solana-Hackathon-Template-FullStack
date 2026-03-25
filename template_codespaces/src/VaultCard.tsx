@@ -16,9 +16,12 @@ import {
   getWithdrawInstructionDataEncoder,
   VAULT_PROGRAM_ADDRESS,
 } from "./generated/vault";
-import { getAssociatedTokenAddressSync } from "@solana/spl-token";
 
 const LAMPORTS_PER_SOL = 1_000_000_000n;
+const ASSOCIATED_TOKEN_PROGRAM_ADDRESS =
+  "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL" as Address;
+const TOKEN_PROGRAM_ADDRESS =
+  "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA" as Address;
 const SYSTEM_PROGRAM_ADDRESS = "11111111111111111111111111111111" as Address;
 
 async function getAnchorDiscriminator(name: string) {
@@ -86,7 +89,14 @@ export function VaultCard() {
         ],
       });
 
-      const tokenAccount = getAssociatedTokenAddressSync(mintPda, walletAddress);
+      const [tokenAccount] = await getProgramDerivedAddress({
+        programAddress: ASSOCIATED_TOKEN_PROGRAM_ADDRESS,
+        seeds: [
+          getAddressEncoder().encode(walletAddress),
+          getAddressEncoder().encode(TOKEN_PROGRAM_ADDRESS),
+          getAddressEncoder().encode(mintPda),
+        ],
+      });
 
       setVaultAddress(vaultPda);
       setProfileAddress(profilePda);

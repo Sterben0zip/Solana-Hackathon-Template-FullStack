@@ -23,6 +23,15 @@ export default function App() {
           <p className="max-w-3xl text-base leading-relaxed text-muted">
             Escanea QR de botes, registra tus residuos con IA, y gana tokens WayLearn por limpiar la ciudad.
           </p>
+
+          <div className="mt-4 flex justify-center">
+            <img
+              src="https://images.unsplash.com/photo-1553262978-5f4894a38f0f?auto=format&fit=crop&w=1200&q=80"
+              alt="Reciclaje inteligente"
+              className="h-44 w-full max-w-3xl rounded-2xl object-cover shadow-lg"
+            />
+          </div>
+
           <nav className="flex gap-4">
             <button
               onClick={() => setCurrentView("main")}
@@ -167,6 +176,15 @@ function IaDashboard() {
           <div className="bg-gray-200 h-32 flex items-center justify-center rounded">
             <span className="text-muted">Cámara 1: Activa</span>
           </div>
+        </div>
+
+        <div className="rounded-xl border border-border-low bg-cream/30 p-4">
+          <p className="text-sm font-medium">Vista IA</p>
+          <img
+            src="https://images.unsplash.com/photo-1542838687-bd26c39360b2?auto=format&fit=crop&w=1200&q=80"
+            alt="Simulacion IA"
+            className="h-48 w-full rounded-xl object-cover"
+          />
         </div>
       </div>
     </section>

@@ -117,3 +117,18 @@ En dado caso de que no tengas las extensiones instaladas te aparecerá la siguie
 Una vez empezado el proceso esperar a que termine. Puede tomar un tiempo debido a que se instalan todas las dependencias similar a la instalación en codespaces.
 
 >ℹ️ Docuemntación oficial: https://solana.com/developers/templates/react-vite-anchor
+
+TERMINAL 1
+cd /workspaces/Solana-Hackathon-Template-FullStack/template_codespaces
+
+npm install
+
+TERMINAL 2
+cd /workspaces/Solana-Hackathon-Template-FullStack/template_codespaces/anchor
+
+NO_DNA=1 anchor test
+
+TERMINAL 1 de vuelta
+npm run dev
+
+Meterse al localhost que te de
