@@ -1,0 +1,55 @@
+.intro {
+  background: #f4f4f4;
+  padding: 80px 60px;
+}
+
+/* TEXTO SUPERIOR */
+.intro-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 50px;
+  gap: 40px;
+}
+
+.intro-top h2 {
+  font-size: 38px;
+  font-weight: 800;
+  color: #000;
+  line-height: 1.2;
+  max-width: 500px;
+}
+
+.intro-top p {
+  font-size: 14px;
+  color: #666;
+  max-width: 400px;
+}
+
+/* GRID IMÁGENES */
+.intro-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.intro-grid img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .intro-top {
+    flex-direction: column;
+  }
+
+  .intro-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .intro-grid img {
+    height: auto;
+  }
+}

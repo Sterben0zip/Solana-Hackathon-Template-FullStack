@@ -1,0 +1,83 @@
+/* CONTENEDOR */
+.tarifas {
+  padding: 60px;
+  background: #f5f5f5;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+/* TITULO */
+.tarifas-titulo {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 40px;
+}
+
+/* GRID */
+.tarifas-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* TARJETAS */
+.tarjeta {
+  width: 320px;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: left;
+}
+
+/* BASICO */
+.basico {
+  background: #eaeaea;
+}
+
+/* PRO */
+.pro {
+  background: #000;
+  color: #fff;
+}
+
+/* TITULOS */
+.tarjeta h3 {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* TEXTO */
+.tarjeta p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* BOTONES */
+.btn-claro {
+  background: #fff;
+  border: 1px solid #000;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.btn-oscuro {
+  background: #fff;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* LISTA */
+.tarjeta ul {
+  margin-top: 20px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.tarjeta li {
+  font-size: 13px;
+  margin-bottom: 8px;
+}

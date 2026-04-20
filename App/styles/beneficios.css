@@ -1,0 +1,76 @@
+.beneficios {
+  background: #f4f4f4;
+  padding: 80px 60px;
+}
+
+.beneficios-contenido {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+/* TEXTO */
+.beneficios-texto {
+  max-width: 500px;
+}
+
+.beneficios-texto h2 {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 40px;
+}
+
+.bloque {
+  margin-bottom: 30px;
+}
+
+.bloque h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.bloque p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+/* BOTÓN IMPORTANTE */
+.btn-beneficios {
+  background: #20c58f;
+  color: #fff;
+  border: none;
+  padding: 12px 28px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.btn-beneficios:hover {
+  background: #18a877;
+}
+
+.link {
+  font-size: 13px;
+  color: #000;
+  cursor: pointer;
+}
+
+/* IMAGEN */
+.beneficios-imagen img {
+  width: 420px;
+  height: auto;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .beneficios-contenido {
+    flex-direction: column;
+  }
+
+  .beneficios-imagen img {
+    width: 100%;
+  }
+}
