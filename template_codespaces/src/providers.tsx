@@ -3,9 +3,7 @@ import { PropsWithChildren } from "react";
 import { autoDiscover, createClient } from "@solana/client";
 
 const RPC_ENDPOINT =
-  import.meta.env.DEV && typeof window !== "undefined"
-    ? "/solana" // development proxy to localnet (POST only)
-    : "https://api.devnet.solana.com";
+  import.meta.env.VITE_SOLANA_RPC_URL || "https://api.devnet.solana.com";
 
 const client = createClient({
   endpoint: RPC_ENDPOINT,

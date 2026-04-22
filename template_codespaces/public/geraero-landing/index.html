@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GerAero</title>
+    <link rel="stylesheet" href="./styles/form.css" />
+    <link rel="stylesheet" href="./styles/hero.css" />
+    <link rel="stylesheet" href="./styles/intro.css" />
+    <link rel="stylesheet" href="./styles/services.css" />
+    <link rel="stylesheet" href="./styles/beneficios.css" />
+    <link rel="stylesheet" href="./styles/noticias.css" />
+    <link rel="stylesheet" href="./styles/tarifas.css" />
+    <link rel="stylesheet" href="./styles/resenas.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      html,
+      body {
+        min-height: auto;
+      }
+
+      .contenedor {
+        min-height: 640px;
+      }
+
+      .hero {
+        min-height: 760px;
+      }
+
+      @media (max-width: 900px) {
+        .hero {
+          min-height: 680px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="contenedor">
+      <div class="formulario">
+        <h1>Conecta tu<br />ciudad con<br />GerAero</h1>
+
+        <p>
+          Comparte tus metas de reciclaje y te ayudamos a disenar soluciones con
+          QR y recompensas para tu comunidad o empresa.
+        </p>
+
+        <form id="formulario_contacto">
+          <div class="campo">
+            <label>Name</label>
+            <input type="text" required />
+          </div>
+
+          <div class="campo">
+            <label>Email (required)</label>
+            <input type="email" required />
+          </div>
+
+          <div class="campo">
+            <label>Message</label>
+            <textarea></textarea>
+          </div>
+
+          <button class="boton">Enviar</button>
+        </form>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <nav>
+        <a href="#">Plataforma</a>
+        <a href="#">Precios</a>
+        <a href="#">Operadores</a>
+        <a href="#">Contacto</a>
+        <a href="#">Recompensas</a>
+      </nav>
+
+      <div class="redes">
+        <span>📘</span>
+        <span>📷</span>
+      </div>
+
+      <p>Disenado con WordPress</p>
+    </footer>
+
+    <header class="header">
+      <div class="logo">GerAero</div>
+      <nav class="nav">
+        <a href="#">Plataforma</a>
+        <a href="#">Precios</a>
+        <a href="#">Operadores</a>
+        <a href="#">Contacto</a>
+        <a href="#">Recompensas</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-contenido">
+        <div class="hero-imagen">
+          <img src="./assets/maquina.png" alt="Reciclaje" />
+        </div>
+
+        <div class="hero-texto">
+          <h1>Reciclar<br />nunca fue tan<br />facil</h1>
+
+          <p>
+            Escanea el QR, valida tus envases con la camara y suma puntos
+            canjeables mientras reducimos juntos la huella ambiental urbana.
+          </p>
+
+          <button class="btn-hero" type="button">Ver como</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro">
+      <div class="intro-top">
+        <h2>Tecnologia para reciclar<br />mejor cada dia</h2>
+
+        <p>
+          En GerAero conectamos ciudadanos, comercios y municipios mediante
+          reciclaje inteligente con QR generando datos en tiempo real,
+          recompensas justas y habitos sostenibles que transforman la forma en
+          que gestionamos nuestros residuos.
+        </p>
+      </div>
+
+      <div class="intro-grid">
+        <img src="./assets/img1.png" alt="QR reciclaje" />
+        <img src="./assets/img2.png" alt="Contenedor" />
+        <img src="./assets/img3.png" alt="Dashboard" />
+      </div>
+    </section>
+
+    <section class="servicios">
+      <div class="servicios-contenido">
+        <div class="servicios-texto">
+          <h2>Servicios</h2>
+
+          <div class="bloque">
+            <h3>Usuarios</h3>
+            <p>
+              App sencilla para escanear el QR, registrar tus reciclajes con la
+              camara, acumular puntos y canjearlos por descuentos o beneficios
+              locales verificados.
+            </p>
+            <span class="link">Ver detalle</span>
+          </div>
+
+          <div class="bloque">
+            <h3>Municipios</h3>
+            <p>
+              Plataforma web con metricas geolocalizadas, panel de puntos,
+              reportes descargables y alertas para disenar campanas de reciclaje
+              mas efectivas y transparentes.
+            </p>
+            <span class="link">Ver servicios</span>
+          </div>
+        </div>
+
+        <div class="servicios-imagen">
+          <img src="./assets/maquina2.png" alt="Maquinas reciclaje" />
+        </div>
+      </div>
+    </section>
+
+    <section class="beneficios">
+      <div class="beneficios-contenido">
+        <div class="beneficios-texto">
+          <h2>Beneficios</h2>
+
+          <div class="bloque">
+            <h3>Acumulacion</h3>
+            <p>
+              Gana puntos por cada envase reconocido, por reciclar varios
+              materiales en una sola sesion y por mantener una racha diaria de
+              reciclaje activo.
+            </p>
+
+            <button class="btn-beneficios" type="button">
+              Ver recompensas
+            </button>
+          </div>
+
+          <div class="bloque">
+            <h3>Retos</h3>
+            <p>
+              Recoge y tira mas botellas para completar retos y generar mas
+              puntos en menos tiempo.
+            </p>
+
+            <span class="link">Ver premios</span>
+          </div>
+        </div>
+
+        <div class="beneficios-imagen">
+          <img src="./assets/maquina2.png" alt="Beneficios reciclaje" />
+        </div>
+      </div>
+    </section>
+
+    <section class="noticias">
+      <h2 class="noticias-titulo">Noticias</h2>
+
+      <div class="noticia-card">
+        <div class="noticia-img"></div>
+
+        <h3 class="noticia-titulo">Hola mundo</h3>
+
+        <p class="noticia-fecha">abril 8, 2026</p>
+      </div>
+    </section>
+
+    <section class="tarifas">
+      <h2 class="tarifas-titulo">Tarifas</h2>
+
+      <div class="tarifas-grid">
+        <div class="tarjeta basico">
+          <h3>Plan Basico</h3>
+
+          <p>
+            Plan Basico gratuito para usuarios que escanean codigos QR, reciclan
+            con verificacion por camara y acumulan puntos sin costo mensual.
+          </p>
+
+          <button class="btn-claro" type="button">Registrarse</button>
+        </div>
+
+        <div class="tarjeta premium">
+          <h3>Plan Premium</h3>
+
+          <p>
+            Incluye reportes, retos, integracion con aliados y panel para
+            municipios u operadores.
+          </p>
+
+          <ul>
+            <li>Retos gamificados</li>
+            <li>Soporte prioritario</li>
+            <li>Panel para municipios</li>
+            <li>Integracion API</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="resenas">
+      <h2 class="resenas-titulo">Resenas</h2>
+
+      <div class="resenas-grid">
+        <div class="resena">
+          <div class="avatar"></div>
+
+          <h4>Aya Nakamura</h4>
+
+          <p>
+            Implementamos GerAero en nuestra torre y en pocas semanas aumento la
+            tasa de reciclaje y motivamos a los vecinos gracias al sistema de
+            puntos.
+          </p>
+        </div>
+
+        <div class="resena">
+          <div class="avatar"></div>
+
+          <h4>Mateo Garcia</h4>
+
+          <p>
+            Como comercio adherido, los clientes llegan con mas frecuencia para
+            canjear puntos y eso impulsa tanto el reciclaje como nuestras ventas
+            diarias.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script src="./scripts/form.js"></script>
+    <script>
+      (function () {
+        function notifyParent(message) {
+          if (window.parent && window.parent !== window) {
+            window.parent.postMessage(message, window.location.origin);
+          }
+        }
+
+        function postHeight() {
+          const sections = Array.from(document.body.children);
+          const contentBottom = sections.reduce(function (maxBottom, section) {
+            const rect = section.getBoundingClientRect();
+            return Math.max(maxBottom, rect.bottom + window.scrollY);
+          }, 0);
+          const height = Math.ceil(contentBottom);
+          notifyParent({ type: "geraero-landing-height", height });
+        }
+
+        window.addEventListener("load", function () {
+          const heroButton = document.querySelector(".btn-hero");
+          if (heroButton) {
+            heroButton.addEventListener("click", function () {
+              notifyParent({ type: "geraero-open-qr" });
+            });
+          }
+
+          postHeight();
+          setTimeout(postHeight, 250);
+          setTimeout(postHeight, 1000);
+
+          const images = Array.from(document.images);
+          images.forEach(function (image) {
+            if (!image.complete) {
+              image.addEventListener("load", postHeight, { once: true });
+            }
+          });
+        });
+
+        window.addEventListener("resize", postHeight);
+      })();
+    </script>
+  </body>
+</html>
